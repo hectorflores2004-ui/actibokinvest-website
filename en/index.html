@@ -39,8 +39,9 @@
 <form id="contact-form">
 <div class="row"><label>Name<input name="name" required></label><label>Email<input type="email" name="email" required></label></div>
 <div class="row"><label>Country of origin<input name="country"></label><label>I'm interested in<select name="interest"><option>Setting up a company</option><option>Accounting</option><option>Audit</option><option>Taxes and compliance</option><option>Investment advisory</option><option>Other</option></select></label></div>
+<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 <label>Message<textarea name="message" required></textarea></label>
-<button class="btn" type="submit">Send inquiry</button></form>
+<button class="btn" type="submit">Send inquiry</button><p id="form-status" class="form-status" role="status" aria-live="polite"></p></form>
 </div></section>
 </main>
 <footer><div class="wrap"><div>© 2026 ACTIBOK · San Salvador, El Salvador<p class="disclaimer">The information on this site is general in nature and does not replace personalized professional advice.</p></div><div><a href="https://actibok.com/privacidad.html">Privacy</a></div></div></footer>

@@ -117,3 +117,4 @@ details p{margin-top:.7rem;color:var(--sec);font-size:15px}
 .res b{color:var(--azul)}
 .res .tot{border-top:1px solid var(--borde);padding-top:.5rem;font-size:17px}
 .dl{display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.form-status{font-size:14px;min-height:1.2em}.form-status.ok{color:var(--verde-oscuro)}.form-status.err{color:#c0392b}
