@@ -4,7 +4,7 @@
     m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})})}
   // Pegue aquí la dirección de Formspree, p. ej. 'https://formspree.io/f/xxxxxxxx'.
   // Si queda vacía, el formulario abre el correo del visitante como respaldo.
-  var FORM_ENDPOINT='';
+  var FORM_ENDPOINT='https://formspree.io/f/xjywkerb';
   var f=document.getElementById('contact-form');
   if(f){f.addEventListener('submit',function(e){
     e.preventDefault();
