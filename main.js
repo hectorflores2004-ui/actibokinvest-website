@@ -10,7 +10,7 @@
     e.preventDefault();
     var d=new FormData(f),en=document.documentElement.lang==='en';
     var st=document.getElementById('form-status'),btn=f.querySelector('button[type=submit]');
-    function say(msg,ok){if(st){st.textContent=msg;st.className='form-status '+(ok?'ok':'err')}}
+    function say(msg,ok){if(st){st.textContent=msg;st.className='form-status '+(ok?'ok':'err');if(st.scrollIntoView)st.scrollIntoView({block:'center',behavior:'smooth'})}}
     var T=en?{sending:'Sending…',ok:'Thank you! We received your inquiry and will reply within one business day.',err:'We could not send your message. Please try again or write to actiboknegocios@gmail.com.'}
             :{sending:'Enviando…',ok:'¡Gracias! Recibimos su consulta y le responderemos en un día hábil.',err:'No pudimos enviar su mensaje. Inténtelo de nuevo o escriba a actiboknegocios@gmail.com.'};
     if(d.get('_gotcha'))return;
